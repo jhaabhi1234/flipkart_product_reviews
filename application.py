@@ -33,7 +33,9 @@ def product():
                             All_rev_link_res=requests.get(All_rev_link)
                             All_rev_soup= BeautifulSoup(All_rev_link_res.text,'html.parser')
                             All_res_anchor_parse=All_rev_soup.find("a", class_="_col JOpGWq")
-                            All_rev_links.append("https://www.flipkart.com"+All_res_anchor_parse.get('href'))
+                            if All_res_anchor_parse:
+                                All_rev_links.append("https://www.flipkart.com" + All_res_anchor_parse.get('href'))
+
                         
                         product_details=[]
                         for link in All_rev_links:

@@ -7,3 +7,15 @@ INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:52:49] "[37mGET /static/css/main.cs
 INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:52:49] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:52:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:52:55] "[33mPOST /review HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:56:20] "[33mGET /review HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:56:24] "[33mPOST /review HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:56:48] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:'NoneType' object has no attribute 'get'
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:56:55] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:root:'NoneType' object has no attribute 'get'
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 10:57:08] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:08:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:'newlin' is an invalid keyword argument for open()
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:09:22] "[37mPOST /product_review HTTP/1.1[0m" 200 -
