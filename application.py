@@ -48,7 +48,7 @@ def product():
                                 review= detail_soup.find('p',class_="_2-N8zT").text.strip()
                                 product_details.append([product_name, customer_name,Rating,review])    
                         csv_filename=f"{query}_product_details.csv"
-                        with open(csv_filename,mode="w", newlin="") as csv_file:
+                        with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
                             writer = csv.writer(csv_file)
                             writer.writerow(["Product Name", "Customer Name", "Rating", "Review"])
                             writer.writerows(product_details)
