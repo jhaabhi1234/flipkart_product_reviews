@@ -19,3 +19,33 @@ INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
 INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:08:52] "[37mGET / HTTP/1.1[0m" 200 -
 INFO:root:'newlin' is an invalid keyword argument for open()
 INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:09:22] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:22:34] "[37mGET / HTTP/1.1[0m" 200 INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:13:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:13:33] "[37mPOST /product_review HTTP/1.1[0m" 200 --
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:23:09] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:26:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 11:26:32] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 13:13:00] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 13:13:31] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 14:03:59] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 15:15:53] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [20/Sep/2023 15:16:04] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2023 12:44:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2023 12:44:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2023 12:44:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2023 12:45:08] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2023 12:45:16] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2023 12:57:31] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2023 12:57:54] "[37mPOST /product_review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2023 13:14:00] "[37mGET / HTTP/1.1[0m" 200 -

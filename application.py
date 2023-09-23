@@ -27,30 +27,24 @@ def product():
                         product_elements = soup.find_all("a", class_="_1fQZEK")
                         for product_element in product_elements:
                             product_links.append("https://www.flipkart.com"+product_element.get('href'))
-                            
-                        All_rev_links=[]
-                        for All_rev_link in product_links:
-                            All_rev_link_res=requests.get(All_rev_link)
-                            All_rev_soup= BeautifulSoup(All_rev_link_res.text,'html.parser')
-                            All_res_anchor_parse=All_rev_soup.find("a", class_="_col JOpGWq")
-                            if All_res_anchor_parse:
-                                All_rev_links.append("https://www.flipkart.com" + All_res_anchor_parse.get('href'))
-
-                        
+                                
                         product_details=[]
-                        for link in All_rev_links:
+                        for link in product_links:
                             res=requests.get(link)
                             if res.status_code==200:
                                 detail_soup=BeautifulSoup(res.text,'html.parser')
-                                product_name = detail_soup.find('a', class_='s1Q9rs _2qfgz2').get('title')
-                                customer_name= detail_soup.find('p',class_='_2sc7ZR _2V5EHH').text.strip()
-                                Rating=detail_soup.find('div',class_="_3LWZlK _1BLPMq").text.strip()
-                                review= detail_soup.find('p',class_="_2-N8zT").text.strip()
-                                product_details.append([product_name, customer_name,Rating,review])    
+                                product_name= detail_soup.find('span',class_='B_NuCI').text.strip()
+                                Total_rating = detail_soup.find('div', class_='_2d4LTz').text.strip()
+                                price = detail_soup.find('div', class_='_30jeq3 _16Jk6d').text.strip()
+                                Highlights = detail_soup.find('div', class_='_2418kt').text.strip()
+                                product_details.append([product_name,
+                                   Total_rating,
+                                  price,
+                                   Highlights])          
                         csv_filename=f"{query}_product_details.csv"
                         with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
                             writer = csv.writer(csv_file)
-                            writer.writerow(["Product Name", "Customer Name", "Rating", "Review"])
+                            writer.writerow(["Product Name", "Total Rating", "Price", "Highlights"])
                             writer.writerows(product_details)
                         return f"Product details saved to {csv_filename}"
 
